@@ -59,6 +59,9 @@
       display: flex;
       justify-content: center;
       margin-bottom: 25px;
+      position: sticky;
+      top: 10px;
+      z-index: 100;
     }
 
     .btn-stop {
@@ -72,6 +75,7 @@
       cursor: pointer;
       font-size: 1rem;
       transition: all 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
 
     .btn-stop:hover {
@@ -126,7 +130,8 @@
 
     .pt-text {
       font-size: 1.1rem;
-      font-weight: bold;
+      font-weight: normal;
+      color: #ddd;
       margin-bottom: 10px;
     }
 
@@ -135,11 +140,13 @@
     }
 
     .en-text {
-      font-size: 1.1rem;
+      font-size: 1.3rem; /* Fonte maior */
+      font-weight: 800; /* Mais cheia/Extra Bold */
       color: var(--accent);
       display: none; /* Escondido por padrão */
-      margin-top: 10px;
+      margin-top: 12px;
       font-style: italic;
+      letter-spacing: 0.3px; /* Melhor leitura */
     }
 
     .btn-reveal {
@@ -828,6 +835,787 @@
         <div class="en-container">
           <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
           <div class="en-text" data-text="Are you still working with graphic design and creating your art?">Are you still working with graphic design and creating your art?</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 8 -->
+    <div class="block" id="block-8">
+      <div class="block-header">
+        <h2 class="block-title">Bloco 8 - Reencontro</h2>
+        <div class="block-controls">
+          <button class="btn-block-play" onclick="playBlock('block-8', 1.0)">▶️ Bloco 1.0x</button>
+          <button class="btn-block-play" onclick="playBlock('block-8', 0.5)">🐢 Bloco 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Oi Parto, é muito bom te ver novamente.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Hi Parto, it’s so good to see you again.">Hi Parto, it’s so good to see you again.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu realmente senti falta das nossas aulas e das nossas conversas.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I really missed our classes and our conversations.">I really missed our classes and our conversations.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Parece que faz muito tempo desde nossa última aula em dezembro.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="It feels like such a long time since our last class in December.">It feels like such a long time since our last class in December.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Oi Luiz, é muito bom te ver também.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Hi Luiz, it’s so nice to see you too.">Hi Luiz, it’s so nice to see you too.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Sim, já faz um tempo desde 19 de dezembro.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Yes, it has been a while since December 19.">Yes, it has been a while since December 19.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu também senti falta de conversar com você.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I missed talking to you as well.">I missed talking to you as well.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 9 -->
+    <div class="block" id="block-9">
+      <div class="block-header">
+        <h2 class="block-title">Bloco 9 - Feriado / Páscoa</h2>
+        <div class="block-controls">
+          <button class="btn-block-play" onclick="playBlock('block-9', 1.0)">▶️ Bloco 1.0x</button>
+          <button class="btn-block-play" onclick="playBlock('block-9', 0.5)">🐢 Bloco 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Como você tem estado?</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="How have you been?">How have you been?</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">E como foi sua Páscoa?</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="And how was your Easter?">And how was your Easter?</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Espero que você tenha tido um dia tranquilo com sua família e entes queridos.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I hope you had a peaceful day with your family and loved ones.">I hope you had a peaceful day with your family and loved ones.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Obrigado, foi bom e tranquilo.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Thank you, it was good and quiet.">Thank you, it was good and quiet.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Passamos um tempo em casa, e foi bom relaxar um pouco.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="We spent some time at home, and it was nice to relax a little.">We spent some time at home, and it was nice to relax a little.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Como foi sua Páscoa no Brasil?</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="How was your Easter in Brazil?">How was your Easter in Brazil?</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Foi boa, graças a Deus.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="It was good, thank God.">It was good, thank God.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 10 -->
+    <div class="block" id="block-10">
+      <div class="block-header">
+        <h2 class="block-title">Bloco 10 - Amigos / Família no Irã</h2>
+        <div class="block-controls">
+          <button class="btn-block-play" onclick="playBlock('block-10', 1.0)">▶️ Bloco 1.0x</button>
+          <button class="btn-block-play" onclick="playBlock('block-10', 0.5)">🐢 Bloco 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu também estava pensando no que você me contou sobre seus amigos e primos no Irã.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I was also thinking about what you told me about your friends and cousins in Iran.">I was also thinking about what you told me about your friends and cousins in Iran.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Como eles estão agora?</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="How are they now?">How are they now?</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Você conseguiu falar com eles?</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Were you able to talk to them?">Were you able to talk to them?</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Sim, felizmente consegui entrar em contato com alguns deles.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Yes, thankfully I was able to get in touch with some of them.">Yes, thankfully I was able to get in touch with some of them.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Ainda estou preocupado, mas as coisas estão um pouco melhores agora.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I’m still worried, but things are a little better now.">I’m still worried, but things are a little better now.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 11 -->
+    <div class="block" id="block-11">
+      <div class="block-header">
+        <h2 class="block-title">Bloco 11 - Enferrujado / Voltando ao Ritmo</h2>
+        <div class="block-controls">
+          <button class="btn-block-play" onclick="playBlock('block-11', 1.0)">▶️ Bloco 1.0x</button>
+          <button class="btn-block-play" onclick="playBlock('block-11', 0.5)">🐢 Bloco 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Fico muito feliz em ouvir isso.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I’m really happy to hear that.">I’m really happy to hear that.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">E preciso dizer de novo, eu realmente senti falta das nossas aulas.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="And I need to say again, I really missed our classes.">And I need to say again, I really missed our classes.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Suas aulas sempre ficam na minha mente por muito tempo.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Your classes always stay in my mind for a long time.">Your classes always stay in my mind for a long time.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Isso significa muito para mim, Luiz.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="That means a lot to me, Luiz.">That means a lot to me, Luiz.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu sempre gosto das nossas aulas também.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I always enjoy our classes too.">I always enjoy our classes too.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Para ser honesto, estou me sentindo um pouco enferrujado hoje haha.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="To be honest, I feel a bit rusty today haha.">To be honest, I feel a bit rusty today haha.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu não pratiquei muito minha fala nesses últimos meses.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I haven’t practiced my speaking much these last months.">I haven’t practiced my speaking much these last months.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Então, por favor, tenha paciência comigo.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="So please be patient with me.">So please be patient with me.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Não se preocupe de forma alguma.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Don’t worry at all.">Don’t worry at all.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Isso é completamente normal.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="That’s completely normal.">That’s completely normal.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Vamos voltar ao ritmo juntos.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="We’ll get back into it together.">We’ll get back into it together.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 12 -->
+    <div class="block" id="block-12">
+      <div class="block-header">
+        <h2 class="block-title">Bloco 12 - Rotina e Programação</h2>
+        <div class="block-controls">
+          <button class="btn-block-play" onclick="playBlock('block-12', 1.0)">▶️ Bloco 1.0x</button>
+          <button class="btn-block-play" onclick="playBlock('block-12', 0.5)">🐢 Bloco 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Nesses últimos meses eu tenho estudado muita programação.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="These last months I’ve been studying programming a lot.">These last months I’ve been studying programming a lot.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Tenho focado em código, projetos práticos e também em aprender mais sobre IA.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I’ve been focusing on coding, practical projects, and also learning more about AI.">I’ve been focusing on coding, practical projects, and also learning more about AI.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Tenho ficado muito animado com isso.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I’ve been very excited about it.">I’ve been very excited about it.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Isso parece incrível.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="That sounds amazing.">That sounds amazing.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu sei o quanto programação é importante para você.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I know how important programming is for you.">I know how important programming is for you.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Sim, e o trabalho também tem estado muito corrido.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Yes, and work has also been very busy.">Yes, and work has also been very busy.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">O departamento de RH tem sido um pouco sobrecarregante às vezes.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="The HR department has been a little overwhelming sometimes.">The HR department has been a little overwhelming sometimes.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Mas estou tentando gerenciar melhor a carga de trabalho.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="But I’m trying to manage the workload better.">But I’m trying to manage the workload better.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu entendo.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I understand.">I understand.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Equilibrar trabalho e estudo pode ser difícil.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Balancing work and study can be difficult.">Balancing work and study can be difficult.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 13 -->
+    <div class="block" id="block-13">
+      <div class="block-header">
+        <h2 class="block-title">Bloco 13 - Lembranças e Admiração (Parte 1)</h2>
+        <div class="block-controls">
+          <button class="btn-block-play" onclick="playBlock('block-13', 1.0)">▶️ Bloco 1.0x</button>
+          <button class="btn-block-play" onclick="playBlock('block-13', 0.5)">🐢 Bloco 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Você se lembra de algumas das coisas que conversamos nas nossas últimas aulas?</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Do you remember some of the things we talked about in our last classes?">Do you remember some of the things we talked about in our last classes?</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Sim, surpreendentemente eu lembro.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Yes, surprisingly I do.">Yes, surprisingly I do.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Ainda lembro de muitas das nossas conversas e do vocabulário que você me ensinou.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I still remember many of our conversations and the vocabulary you taught me.">I still remember many of our conversations and the vocabulary you taught me.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Suas aulas realmente ficam na minha mente.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Your classes really stick in my mind.">Your classes really stick in my mind.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Tem algo que eu sempre admirei em você.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="There’s something I always admired about you.">There’s something I always admired about you.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu lembro de uma das nossas últimas conversas quando falávamos sobre história e diferentes perspectivas.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I remember one of our last conversations when we were talking about history and different perspectives.">I remember one of our last conversations when we were talking about history and different perspectives.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu realmente admiro sua sensibilidade e a forma como você tenta entender as pessoas e os contextos profundamente.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I really admire your sensitivity and the way you try to understand people and contexts deeply.">I really admire your sensitivity and the way you try to understand people and contexts deeply.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Acho que isso mostra muita empatia e inteligência.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I think that shows a lot of empathy and intelligence.">I think that shows a lot of empathy and intelligence.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Obrigado, Luiz. Isso é muito gentil da sua parte dizer.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Thank you, Luiz. That’s very kind of you to say.">Thank you, Luiz. That’s very kind of you to say.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Estou muito feliz de estar de volta.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I’m really happy to be back.">I’m really happy to be back.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Senti muita falta disso.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I missed this so much.">I missed this so much.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Falar com você em inglês sempre me motiva e me faz sentir mais confiante.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Talking to you in English always motivates me and makes me feel more confident.">Talking to you in English always motivates me and makes me feel more confident.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Estou muito feliz que você voltou também.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I’m so happy you’re back too.">I’m so happy you’re back too.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Vamos ter uma ótima aula hoje.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Let’s have a great class today.">Let’s have a great class today.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 14 -->
+    <div class="block" id="block-14">
+      <div class="block-header">
+        <h2 class="block-title">Bloco 14 - Lembranças e Admiração (Parte 2)</h2>
+        <div class="block-controls">
+          <button class="btn-block-play" onclick="playBlock('block-14', 1.0)">▶️ Bloco 1.0x</button>
+          <button class="btn-block-play" onclick="playBlock('block-14', 0.5)">🐢 Bloco 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Há algo que eu sempre admirei em você.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="There is something I have always admired about you.">There is something I have always admired about you.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Ainda lembro de uma das nossas últimas aulas quando estávamos falando sobre história e sobre Hitler.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I still remember one of our last classes when we were talking about history and about Hitler.">I still remember one of our last classes when we were talking about history and about Hitler.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Você mencionou que gostaria de ler mais livros e talvez até morar na Alemanha por um tempo.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="You mentioned that you would like to read more books and maybe even live in Germany for some time.">You mentioned that you would like to read more books and maybe even live in Germany for some time.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Para entender melhor aquele período e a mente humana por trás disso.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="To better understand that period and the human mind behind it.">To better understand that period and the human mind behind it.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Achei isso muito bonito e muito inteligente.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I found that very beautiful and very intelligent.">I found that very beautiful and very intelligent.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Não por causa da pessoa em si, claro.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Not because of the person himself, of course.">Not because of the person himself, of course.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Mas porque mostra o quão profundamente você tenta entender a história, as pessoas e o comportamento humano.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="But because it shows how deeply you try to understand history, people, and human behavior.">But because it shows how deeply you try to understand history, people, and human behavior.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Pouquíssimas pessoas têm esse nível de sensibilidade, empatia e curiosidade intelectual.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Very few people have that level of sensitivity, empathy, and intellectual curiosity.">Very few people have that level of sensitivity, empathy, and intellectual curiosity.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Eu realmente admiro a forma como você tenta entender diferentes perspectivas e contextos históricos.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="I really admire the way you try to understand different perspectives and historical contexts.">I really admire the way you try to understand different perspectives and historical contexts.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+      <div class="sentence-item">
+        <div class="pt-text">Com tanta profundidade.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="With such depth.">With such depth.</div>
+        </div>
+        <div class="sentence-controls">
+          <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
+          <button class="btn-play" onclick="playSentence(this, 0.5)">🐢 0.5x</button>
+        </div>
+      </div>
+	  <div class="sentence-item">
+        <div class="pt-text">Irã. Irã. Irã. Há uma guerra no Irã.</div>
+        <div class="en-container">
+          <button class="btn-reveal" onclick="toggleEnglish(this)">👁️ Mostrar Inglês</button>
+          <div class="en-text" data-text="Iran. Iraan. Iran. There is a war in Iran.">Iran. Iraan. Iran. There is a war in Iran.</div>
         </div>
         <div class="sentence-controls">
           <button class="btn-play" onclick="playSentence(this, 1.0)">▶️ 1.0x</button>
